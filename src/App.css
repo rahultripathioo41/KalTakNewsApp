@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover; /* Keep image inside without distortion */
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit description to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
